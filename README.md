@@ -14,7 +14,7 @@ pod 'EncoreKit', :source => 'https://github.com/EncoreKit/Specs.git'
 
 Leave out the version when a wrapper (Unity, React Native, Flutter, Capacitor, KMP) pins it. With `:source`, CocoaPods looks for `EncoreKit` here only, and your other pods still resolve from trunk.
 
-Do not add only `source 'https://github.com/EncoreKit/Specs.git'` at the top of the `Podfile`. A `source` line turns off the implicit trunk source, and CocoaPods takes a pod from the first source that has it. If you use `source` lines, list this repo first and trunk second:
+Do not add only `source 'https://github.com/EncoreKit/Specs.git'` at the top of the `Podfile`. A `source` line turns off the implicit trunk source, so your other pods stop resolving. If you use `source` lines, list trunk too:
 
 ```ruby
 source 'https://github.com/EncoreKit/Specs.git'
