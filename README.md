@@ -1,4 +1,4 @@
-# EncoreKit Specs
+# EncoreKit CocoaPods specs
 
 The CocoaPods spec repo for the Encore iOS SDK (`EncoreKit`) and its Objective-C overlay (`EncoreObjC`).
 
@@ -9,15 +9,15 @@ CocoaPods trunk becomes read-only on 2 December 2026, so new versions are publis
 Add one line to your app target in the `Podfile`:
 
 ```ruby
-pod 'EncoreKit', :source => 'https://github.com/EncoreKit/Specs.git'
+pod 'EncoreKit', :source => 'https://github.com/EncoreKit/cocoapods-specs.git'
 ```
 
 Leave out the version when a wrapper (Unity, React Native, Flutter, Capacitor, KMP) pins it. With `:source`, CocoaPods looks for `EncoreKit` here only, and your other pods still resolve from trunk.
 
-Do not add only `source 'https://github.com/EncoreKit/Specs.git'` at the top of the `Podfile`. A `source` line turns off the implicit trunk source, so your other pods stop resolving. If you use `source` lines, list trunk too:
+Do not add only `source 'https://github.com/EncoreKit/cocoapods-specs.git'` at the top of the `Podfile`. A `source` line turns off the implicit trunk source, so your other pods stop resolving. If you use `source` lines, list trunk too:
 
 ```ruby
-source 'https://github.com/EncoreKit/Specs.git'
+source 'https://github.com/EncoreKit/cocoapods-specs.git'
 source 'https://cdn.cocoapods.org/'
 ```
 
